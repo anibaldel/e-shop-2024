@@ -11,9 +11,9 @@ export const CheckoutClient = () => {
     const router = useRouter();
     const [handlePaymentSuccess, setHandlePaymentSuccess] = useState(false)
 
-    if(!cartProducts && handlePaymentSuccess === false) {
-        router.push('/')
-    }
+    // if(!cartProducts && handlePaymentSuccess === false) {
+    //     router.push('/')
+    // }
   return (
     <div className="w-full">
         {cartProducts && (

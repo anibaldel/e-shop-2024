@@ -1,7 +1,6 @@
 'use client'; 
 
 import { useState } from 'react';
-import { useCart } from '../../hooks/useCart';
 import { Button, Heading, Input } from '../components';
 import { formatPrice } from '@/utils';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
