@@ -19,7 +19,7 @@ export const SetQuantity = ({cartCounter, cartProduct, handleQtyIncrease, handle
                 CANTIDAD: 
             </div>
         )}
-        <div className="flex gap-4 items-center text-base">
+        <div className="flex gap-1 md:gap-4 items-center text-base">
             <button onClick={handleQtyDecrease} className={btnStyles}>-</button>
             <div>{cartProduct.quantity}</div>
             <button onClick={handleQtyIncrease} className={btnStyles}>+</button>
