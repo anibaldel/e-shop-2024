@@ -23,18 +23,17 @@ export const ItemContent = ({item}:Props) => {
                 </div>
             </Link>
             <div className="flex flex-col justify-between">
-            <Link href={`/product/${item.id}`}>
-                {truncateText(item.name)}
-            </Link>
-            <div>{item.selectedImage.color}</div>
-            <div className="w-[70px]">
-                <button onClick={()=> handleRemoveProductFromCart(item)}
-                    className="text-slate-500 underline"
-                >
-                    Remover
-                </button>
-            </div>
-            
+                <Link href={`/product/${item.id}`}>
+                    {truncateText(item.name)}
+                </Link>
+                <div>{item.selectedImage.color}</div>
+                <div className="w-[70px]">
+                    <button onClick={()=> handleRemoveProductFromCart(item)}
+                        className="text-slate-500 underline"
+                    >
+                        Remover
+                    </button>
+                </div>
             </div>
         </div>
         <div className="justify-self-center">{formatPrice(item.price)}</div>
